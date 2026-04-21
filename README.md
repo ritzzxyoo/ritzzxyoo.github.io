@@ -6,7 +6,7 @@
 
 
 ## 👩‍💻 About Me
-Aspiring **Data Analyst & Machine Learning Enthusiast** skilled in Python, SQL, and Power BI. Passionate about solving real-world problems using data-driven insights.
+Aspiring **Data Scientist & Machine Learning Enthusiast** skilled in Python, SQL, and Power BI. Passionate about solving real-world problems using data-driven insights.
 
 
 
