@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritika Priyadarsani Pattanaik — Aspiring Data Scientist</title>
+    <meta name="description" content="Portfolio of Ritika Priyadarsani Pattanaik — aspiring data scientist, ML enthusiast, and CSE student building intelligent solutions." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Particle background canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Custom cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Sticky navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Ritika<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-container">
+        <div class="hero-text reveal">
+          <p class="hero-greet">Hi there, I'm</p>
+          <h1 class="hero-name">
+            <span class="gradient-text">Ritika Priyadarsani</span>
+            <br />
+            <span class="gradient-text-soft">Pattanaik</span>
+          </h1>
+          <p class="hero-tagline">
+            <span class="pill">Aspiring Data Scientist</span>
+            <span class="pill">Machine Learning Enthusiast</span>
+            <span class="pill">Building Intelligent Solutions</span>
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="hero-avatar reveal">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-float">
+            <img src="./avatar.png" alt="Ritika avatar" class="avatar-img" />
+          </div>
+          <div class="floating-icon icon-1"><i class="fa-brands fa-python"></i></div>
+          <div class="floating-icon icon-2"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="floating-icon icon-3"><i class="fa-solid fa-brain"></i></div>
+          <div class="floating-icon icon-4"><i class="fa-solid fa-database"></i></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a Computer Science student passionate about
+              <span class="highlight">Data Science</span>,
+              <span class="highlight">Machine Learning</span>, and solving
+              real-world problems using data. I enjoy building impactful
+              projects and continuously learning new technologies.
+            </p>
+            <div class="about-tags">
+              <span>Curious</span>
+              <span>Detail-oriented</span>
+              <span>Creative</span>
+              <span>Problem-solver</span>
+            </div>
+          </div>
+          <div class="counters reveal">
+            <div class="counter-card glass">
+              <div class="counter-number" data-target="2">0</div>
+              <div class="counter-plus">+</div>
+              <div class="counter-label">Projects</div>
+            </div>
+            <div class="counter-card glass">
+              <div class="counter-number" data-target="3">0</div>
+              <div class="counter-plus">+</div>
+              <div class="counter-label">Certifications</div>
+            </div>
+            <div class="counter-card glass">
+              <div class="counter-number" data-target="10">0</div>
+              <div class="counter-plus">+</div>
+              <div class="counter-label">Skills</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category glass reveal">
+            <h3><i class="fa-solid fa-code"></i> Programming</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip"><i class="fa-solid fa-c"></i> C</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category glass reveal">
+            <h3><i class="fa-solid fa-chart-pie"></i> Data Tools</h3>
+            <div class="skill-chips">
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Seaborn</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Power BI</span>
+            </div>
+          </div>
+          <div class="skill-category glass reveal">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="chip">Jupyter Notebook</span>
+              <span class="chip">Google Colab</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+          <div class="skill-category glass reveal">
+            <h3><i class="fa-solid fa-lightbulb"></i> Concepts</h3>
+            <div class="skill-chips">
+              <span class="chip">Data Analysis</span>
+              <span class="chip">EDA</span>
+              <span class="chip">Regression</span>
+              <span class="chip">Statistical Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-header">
+              <div class="project-icon"><i class="fa-solid fa-house-chimney"></i></div>
+              <h3>Bangalore House Price Prediction</h3>
+            </div>
+            <ul class="project-points">
+              <li>Built ML models — Linear Regression, Random Forest, XGBoost</li>
+              <li>Worked on <strong>20,000+ records</strong></li>
+              <li>Achieved <strong>87% accuracy</strong></li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Streamlit</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/ritzzxyoo/bangalore-house-price-prediction" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-header">
+              <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <h3>Retail Sales Analysis</h3>
+            </div>
+            <ul class="project-points">
+              <li>Performed <strong>EDA</strong> on an electronics dataset</li>
+              <li>Found top revenue drivers — <strong>₹2.66 lakh</strong> in sales</li>
+              <li>Built an interactive <strong>Power BI dashboard</strong></li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>MySQL</span><span>Excel</span><span>Power BI</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/ritzzxyoo/retail-sales-analysis" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+             
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> Education</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-date">2023 — Present</span>
+              <h3>Kalinga Institute of Industrial Technology</h3>
+              <p>B.Tech in Computer Science &amp; Engineering</p>
+              <p class="timeline-meta">CGPA: <strong>7.24</strong></p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-date">2021</span>
+              <h3>Delhi Public School</h3>
+              <p>Class 12 (Senior Secondary)</p>
+              <p class="timeline-meta">Score: <strong>85.6%</strong></p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-date">2019</span>
+              <h3>Delhi Public School</h3>
+              <p>Class 10 (Secondary)</p>
+              <p class="timeline-meta">Score: <strong>89.4%</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> Certifications</h2>
+        <div class="cert-grid">
+          <div class="cert-card glass reveal">
+            <i class="fa-brands fa-redhat"></i>
+            <h4>Red Hat System Administration</h4>
+            <p>Linux administration fundamentals</p>
+          </div>
+          <div class="cert-card glass reveal">
+            <i class="fa-solid fa-robot"></i>
+            <h4>AI Certification — HP LIFE</h4>
+            <p>Foundations of Artificial Intelligence</p>
+          </div>
+          <div class="cert-card glass reveal">
+            <i class="fa-solid fa-chart-column"></i>
+            <h4>Business Analytics</h4>
+            <p>University of Colorado Boulder</p>
+          </div>
+          <div class="cert-card glass reveal">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <h4>Business for Good</h4>
+            <p>London Business School</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> Leadership &amp; Experience</h2>
+        <div class="lead-grid">
+          <div class="lead-card glass reveal">
+            <div class="lead-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h4>Senior Member — Operations</h4>
+            <p>KIIT Cultural Team</p>
+          </div>
+          <div class="lead-card glass reveal">
+            <div class="lead-icon"><i class="fa-solid fa-music"></i></div>
+            <h4>Official Member</h4>
+            <p>Korus Dance Society</p>
+          </div>
+          <div class="lead-card glass reveal">
+            <div class="lead-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h4>Deloitte Virtual Internship</h4>
+            <p>Data Analytics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="hash">#</span> Get in Touch</h2>
+        <div class="contact-card glass reveal">
+          <p class="contact-lead">
+            Have a project in mind, an opportunity to share, or just want to say hi?
+            I'd love to hear from you.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:pattanaikritika66@gmail.com" class="contact-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span>pattanaikritika66@gmail.com</span>
+            </a>
+            <div class="contact-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bhubaneswar, India</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/ritika-priyadarshani-pattanaik-5b63bb288" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ritzzxyoo" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="pattanaikritika66@gmail.com" aria-label="Email" class="social-btn">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with <span class="heart">❤</span> by Ritika</p>
+      <p class="footer-sub">© <span id="year"></span> Ritika Priyadarsani Pattanaik. Crafted with code &amp; curiosity.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
